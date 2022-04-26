@@ -188,6 +188,13 @@ button{
 }
 
 /* Media Queries */
-@media screen and {
-  
+@media screen and (min-width: 992px){
+  .container{
+    width: 85vw;
+  }
+  .navbar{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
