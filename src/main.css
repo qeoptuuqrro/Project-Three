@@ -86,9 +86,33 @@ button{
 }
 
 .navbar-toggler{
-  color: var(red);
+  color: black;
   background: none;
   padding: 0.1rem 0.4rem;
   border: none;
   cursor: pointer;
+  font-size: 1.7rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler:hover{
+  background:rgb(225, 169, 47); 
+  color: white; 
+}
+
+.nav-item{
+  padding: 0.5rem 3.5vw;
+  transition: background 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-item:hover{
+  background: rgb(225, 169, 47);
+}
+
+.nav-link{
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 4px;
 }
