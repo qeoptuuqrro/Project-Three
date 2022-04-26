@@ -54,6 +54,17 @@ button{
 }
 
 .header{
-  height: 100vh;
-  background: linear-gradient(),url()
+  min-height: 100vh;
+  width: 100%;
+  background-image: url(images/victor-hernandez-7qLJJ2dMCyY-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.navbar-brand{
+  font-size: 1.8rem;
+  font-weight: 800;
 }
