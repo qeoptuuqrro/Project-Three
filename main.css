@@ -197,4 +197,25 @@ button{
     align-items: center;
     flex-wrap: wrap;
   }
+  .navbar-collapse{
+    flex: 1 0 auto;
+    padding-right: 7.5vw;
+    display: flex!important; /* adding important so it overrides everything */
+    height: auto;
+    justify-content: flex-end;
+    transition: none;
+  }
+  .brand-and-toggler{
+    padding-left: 7.5vw;
+    padding-right: 0;
+  }
+  .navbar-brand{
+    font-size: 2.3rem;
+  }
+  .nav-item{
+    padding: 0.75rem 1rem;
+  }
+  .navbar-toggler{
+    display: ;
+  }
 }
