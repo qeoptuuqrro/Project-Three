@@ -240,6 +240,27 @@ button{
   letter-spacing: 2px;
 }
 
+/*about */
+
+#about{
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.about-left-col{
+  flex-basis: 50%;
+}
+
+.about-left-col img{
+  width: 100%;
+}
+
+.about-right-col{
+  flex-basis: 50%;
+}
+
 /* Media Queries */
 @media screen and (min-width: 992px){
   .container{
