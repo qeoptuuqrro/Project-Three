@@ -193,6 +193,7 @@ button{
   justify-content: center;
   background-color: #101010;
   color: white;
+  padding: 100px 0;
 }
 
 .timeline{
@@ -304,5 +305,18 @@ button{
     background-color: gray;
     border-radius: 50%;
     top: 0;
+  }
+  .timeline ul li:nth-child(odd)::after{
+    right: 0;
+    transform: translate(50%,-50%);
+    right: -30px;
+  }
+
+  .timeline ul li:nth-child(even)::after{
+    transform: translate(-50%,-50%);
+    left: -30px;
+  }
+  .timeline ul li:hover:after{
+    background-color: rgb(225, 169, 47);
   }
 }
