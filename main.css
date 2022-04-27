@@ -175,8 +175,6 @@ button{
   background: rgb(225, 169, 47);
 }
 
-
-
 .header-banner-content{
   background: rgba(245,245,245,0.85);
   padding: 3rem 0;
@@ -186,6 +184,55 @@ button{
 .header-banner-content:hover{
   background-color: rgba(245,245,245,1);
 }
+
+.container1{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #101010;
+  color: white;
+}
+
+.timeline{
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul{
+  list-style: none;
+}
+
+.timeline ul li{
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.timeline ul li:last-child{
+  margin-bottom: 0;
+}
+
+.timeline-content h1{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.timeline-content p{
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+
 
 /* Media Queries */
 @media screen and (min-width: 992px){
@@ -221,4 +268,31 @@ button{
   .navbar-nav{
     display: flex;
   }
+
+  /*for timeline*/
+  .timeline ul li{
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+  .timeline ul li:nth-child(odd){
+    float: left;
+    clear: right;
+  }
+
+  .timeline ul li:nth-child(even){
+    float: right;
+    clear: left;
+  }  
+
+  .timeline::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform:translate(-50%)
+    background-color: gray;
+  }
+
 }
