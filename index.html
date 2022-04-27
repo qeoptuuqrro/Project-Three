@@ -126,13 +126,13 @@
       </div>
     <div class="img-gallery">
       <img src="images/AIR-MAX-1_171017_113746.jpg" alt="" onclick="openFullImg(this.src)">
-      <img src="images/glen-ardi-S1RbYp5ho2M-unsplash.jpg" alt="" onclick="openFullImg()">
-      <img src="images/fabien-lebre-AkmgrEs3isM-unsplash.jpg" alt="" onclick="openFullImg()">
-      <img src="images/luis-felipe-lins-J2-wAQDckus-unsplash.jpg" alt="" onclick="openFullImg()">
-      <img src="images/artem-ivanov-DASB9EqbizE-unsplash.jpg" alt="" onclick="openFullImg()">
-      <img src="images/baptiste-gousset-iKk6Ge8_OMc-unsplash.jpg" alt="" onclick="openFullImg()">
-      <img src="images/justin-chrn-qtM9bJ-piVU-unsplash.jpg" alt="" onclick="openFullImg()">
-      <img src="images/oliver-ragfelt-6LmtCfVYUPQ-unsplash.jpg" alt="" onclick="openFullImg()">
+      <img src="images/glen-ardi-S1RbYp5ho2M-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="images/fabien-lebre-AkmgrEs3isM-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="images/luis-felipe-lins-J2-wAQDckus-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="images/artem-ivanov-DASB9EqbizE-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="images/baptiste-gousset-iKk6Ge8_OMc-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="images/justin-chrn-qtM9bJ-piVU-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
+      <img src="images/oliver-ragfelt-6LmtCfVYUPQ-unsplash.jpg" alt="" onclick="openFullImg(this.src)">
     </div>
     </section>
 
@@ -142,8 +142,13 @@
       var fullImgBox = document.getElementById("fullImgBox")
       var fullImg = document.getElementById("fullImg")
 
-      function openFullImg(){
+      function openFullImg(pic){
         fullImgBox.style.display = "flex";
+        fullImg.src = pic;
+      }
+
+      function closeFullImg(){
+        fullImgBox.style.display = "none";
       }
 
     </script>
