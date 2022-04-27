@@ -247,19 +247,25 @@ button{
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  background-image: url(images/talles-alves-VSss57q-Cxs-unsplash.jpg);
 }
 
-.about-left-col{
-  flex-basis: 50%;
+#about h1{
+  text-align: center;
 }
 
-.about-left-col img{
-  width: 100%;
+.center1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 
-.about-right-col{
-  flex-basis: 50%;
+.about-text p{
+  border: 3px solid black;
+  padding: 10px;
 }
+
 
 /* Media Queries */
 @media screen and (min-width: 992px){
