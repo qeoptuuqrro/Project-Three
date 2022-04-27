@@ -233,7 +233,12 @@ button{
   font-weight: 300;
 }
 
-
+.timeline-content .date{
+  font-size: 13px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
 
 /* Media Queries */
 @media screen and (min-width: 992px){
@@ -280,12 +285,14 @@ button{
     float: left;
     clear: right;
     transform: translateX(-30px);
+    border-radius: 20px 0px 20px 0px;
   }
 
   .timeline ul li:nth-child(even){
     float: right;
     clear: left;
     transform: translateX(30px);
+    border-radius: 0px 20px 20px 0px;
   }  
 
   .timeline::before{
@@ -318,5 +325,9 @@ button{
   }
   .timeline ul li:hover:after{
     background-color: rgb(225, 169, 47);
+  }
+  .timeline-content .date{
+    position: absolute;
+    top: -30px;
   }
 }
